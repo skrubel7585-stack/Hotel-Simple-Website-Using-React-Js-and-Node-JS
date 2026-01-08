@@ -1,0 +1,84 @@
+.kitchen-section {
+    background:
+    radial-gradient(circle at top, rgba(53, 53, 138, 0.9), rgba(5, 5, 19, 0.95)),
+    url("/kitchensection.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  max-width: 750px;
+  color: #cfcfe6;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #5b2c4a;
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #b86aa0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #f0e6f3;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

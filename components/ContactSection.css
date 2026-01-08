@@ -1,0 +1,77 @@
+.contact-section {
+  padding: 100px 20px;
+  background:
+    radial-gradient(circle at top, rgba(23, 25, 74, 0.95), rgba(5, 5, 19, 0.98)),
+    url("/bg.webp") center/cover no-repeat;
+  color: #e6ebff;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* LEFT */
+.contact-text h2 {
+  font-size: 36px;
+  color: #9fb0ff;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #cfd6ff;
+}
+
+/* FORM */
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #7f8cff, #a58bff);
+  color: #050513;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 📱 Mobile */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,48 @@
+## 📁 Your Project File Structure (From Your Screenshot)
+
+```
+HOTEL/
+│
+├── .next/
+│
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   └── HeroSection.tsx
+│
+├── node_modules/
+│
+├── public/
+│   ├── bg.webp
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+│
+├── .gitignore
+├── eslint.config.mjs
+├── File Structure.txt
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
+```
+
+---
+
+### 🧠 Explanation (Easy Bangla)
+- **app/** → Main routing folder (Next.js App Router)
+- **components/** → UI component (HeroSection)
+- **public/** → Images & SVG files
+- **.next/** → Auto generated (touch korba na)
+- **node_modules/** → Installed packages
+
+👉 এই structure একদম **তোমার screenshot অনুযায়ী** বানানো হয়েছে।

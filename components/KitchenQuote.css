@@ -1,0 +1,123 @@
+.quote-section {
+  background: radial-gradient(
+    circle at top,
+    #1b1234 0%,
+    #0c0620 50%,
+    #05020f 100%
+  );
+  color: #ffffff;
+  padding: 80px 20px 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.quote-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+}
+
+.quote-left h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.quote-left h4 {
+  font-size: 18px;
+  color: #d6c6ff;
+  margin-bottom: 15px;
+}
+
+.quote-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #e5def5;
+}
+
+.contact-info h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.contact-info li {
+  font-size: 14.5px;
+  margin-bottom: 6px;
+}
+
+.highlight-box {
+  background: rgba(150, 80, 150, 0.25);
+  padding: 15px 18px;
+  border-left: 4px solid #b46bb4;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.secure-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #caa6d6;
+  margin-top: 4px;
+}
+
+.secure-box p {
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.quote-right {
+  text-align: center;
+}
+
+.quote-right img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.service-info p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #e6dcf5;
+  margin-bottom: 8px;
+}
+
+.quote-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 900px) {
+  .quote-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-left h2 {
+    font-size: 28px;
+  }
+
+  .quote-right {
+    margin-top: 30px;
+  }
+}

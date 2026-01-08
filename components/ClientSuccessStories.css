@@ -1,0 +1,93 @@
+.client-section {
+    background:
+    radial-gradient(circle at top, rgba(0, 0, 17, 0.9), rgba(3, 3, 41, 0.95)),
+    url("/bg.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.client-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: left;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.client-card {
+  position: relative;
+  border: 1.5px solid #8b4a7a;
+  padding: 45px 30px;
+  min-height: 360px;
+  background: transparent;
+}
+
+.client-card::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 40px;
+  height: calc(100% - 80px);
+  width: 2px;
+  background: #8b4a7a;
+}
+
+.quote-mark {
+  position: absolute;
+  font-size: 48px;
+  color: #8b4a7a;
+  font-weight: 600;
+}
+
+.quote-mark.top {
+  top: -18px;
+  left: 16px;
+}
+
+.quote-mark.bottom {
+  bottom: -22px;
+  right: 20px;
+}
+
+.quote-content p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+
+.author {
+  font-size: 14px;
+  padding-left: 25px;
+  color: #f1e9f5;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 900px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-card {
+    min-height: auto;
+  }
+
+  .client-title {
+    text-align: center;
+    font-size: 28px;
+  }
+}
